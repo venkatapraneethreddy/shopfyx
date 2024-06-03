@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help - SHOPFYX</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            font-size: 16px;
+            background-color: #f8f9fa;
+            padding-top: 0; /* Removed padding top */
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px; /* Added padding to center content */
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        header {
+            background-color: #2ECC71;
+            color: #ffffff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between; /* Adjusted alignment */
+            align-items: center;
+            margin-bottom: 20px; /* Added margin bottom */
+        }
+        header h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            justify-content: center; /* Center the items horizontally */
+            align-items: center; /* Center the items vertically */
+        }
+        nav ul li {
+            margin-right: 20px;
+            position: relative;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        nav ul li a:hover {
+            background-color: #ffffff;
+            color: #007bff;
+            text-decoration: none;
+        }
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #ffffff;
+            padding: 10px;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        nav ul li:hover ul {
+            display: block;
+        }
+        nav ul li ul li {
+            margin: 0;
+        }
+        nav ul li ul li a {
+            padding: 5px 10px;            
+        }
+        li:nth-child(n){
+            font-size: 20px;
+        }
+        .search-bar {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Center the search bar horizontally */
+			margin-right:120px;
+        }
+        .search-bar input[type="text"] {
+            padding: 8px;
+            border: none;
+            border-radius: 4px 0 0 4px;
+            width: 300px;
+        }
+        .search-bar button {
+            padding: 8px 15px;
+            background-color: #FF9900;
+            color: #ffffff;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+        .dropbtn {
+          background-color: #2ECC71;
+          color: white;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+          cursor: pointer;
+        }
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          border-radius: 15px;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+        .dropdown:hover .dropbtn { 
+            border-radius: 5px;
+            background-color: white;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SHOPFYX</h1>
+        <nav>
+            <ul>
+                <li class="search-bar">
+                    <input style="font-size: 15px;" type="text" placeholder="Search...">
+                    <button style="font-size: 15px;">Search</button>
+                </li>
+                <li><a href="indexsample.html">Home</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn" style="font-size: 20px; padding: 3px 6px;">Shop</button>
+                        <div class="dropdown-content">
+                            <a href="indx3.php">Mobiles</a>
+                            <a href="indx1.php">Groceries</a>
+                            <a href="indx4.php">Shoes</a>
+                            <a href="indx5.php">Watches</a>
+                            <a href="indx2.php">Clothes</a>
+                            <a href="indx.php">Bags</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Help</a></li>
+                <li><a href="login2.php">Login</a></li>
+                <li><a href="cart.php" id="cart">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Help</h1>
+        <p>Welcome to the help page of SHOPFYX. Here you can find answers to common questions and get assistance with using our website.</p>
+
+        <h2>Frequently Asked Questions (FAQs)</h2>
+        <h3>1. How can I place an order?</h3>
+        <p>To place an order, follow these steps:
+            <ol>
+                <li>Browse our website and add the desired items to your cart.</li>
+                <li>Proceed to checkout and provide your shipping and payment information.</li>
+                <li>Review your order summary and confirm your purchase.</li>
+            </ol>
+        </p>
+
+        <h3>2. How can I track my order?</h3>
+        <p>Once your order is shipped, you will receive a tracking number via email. You can use this tracking number to monitor the status of your delivery on our website or the courier's website.</p>
+
+        <h3>3. What payment methods do you accept?</h3>
+        <p>We accept various payment methods, including credit/debit cards, PayPal, and bank transfers. You can choose your preferred payment option during checkout.</p>
+
+        <h3>4. How can I contact customer support?</h3>
+        <p>If you need assistance or have any inquiries, you can contact our customer support team via email at support@shopfyx.com or call us at +1-800-123-4567. Our team is available to assist you from Monday to Friday, 9:00 AM to 5:00 PM (EST).</p>
+
+        <h2>About Us</h2>
+        <p>SHOPFYX is a leading online retailer committed to providing high-quality products and exceptional customer service. Our mission is to offer a seamless shopping experience and deliver products that exceed our customers' expectations.</p>
+
+        <h2>Contact Us</h2>
+        <p>If you have any further questions or need additional assistance, please don't hesitate to contact us using the information provided below:</p>
+        <ul>
+            <li>Email: support@shopfyx.com</li>
+            <li>Phone: +1-800-123-4567</li>
+            <li>Address: 123 Shopfyx Street, City, Country</li>
+        </ul>
+    </div>
+</body>
+</html>
